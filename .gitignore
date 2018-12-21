@@ -1,6 +1,7 @@
 .Rhistory
 .RData
 .Rproj.user
+sugiyamastudy.Rproj
 
 # don't ever let output hit the git history
 *.pdf

@@ -1,3 +1,7 @@
 .Rhistory
 .RData
 .Rproj.user
+
+# don't ever let output hit the git history
+*.pdf
+*.rds

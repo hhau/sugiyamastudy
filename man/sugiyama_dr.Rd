@@ -51,7 +51,8 @@ some issues.
 \details{
 Important assumptions:
 - The "base_dist" component of the numerator/denominator objects has to have
-a corresponding dbase_dist and rbase_dist methods, which a functions of
+corresponding dbase_dist and rbase_dist methods, which are functions of
 x and n_samples respectively (and the named parameters in the args 
-component).
+component). The default arguments of both \code{numerator} and 
+\code{denominator} demonstrate this.
 }

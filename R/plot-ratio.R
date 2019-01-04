@@ -12,7 +12,12 @@
 #'
 #' @export
 #' @return a ggplot2 object
-plot_ratio <- function(ratio_obj, output_directory = NULL, ...) {
+plot_ratio <- function(
+  ratio_obj,
+  output_directory = NULL,
+  plot_height = PLOT_HEIGHT,
+  plot_width = PLOT_WIDTH
+) {
   n_points <- 500
   x <- seq(
     from = ratio_obj$plot_limits$min,
@@ -95,10 +100,10 @@ plot_ratio <- function(ratio_obj, output_directory = NULL, ...) {
       filename = file.path(output_directory, plot_file_name),
       plot = plot_res,
       device = "pdf",
-      ...
+      width = PLOT_WIDTH,
+      height = PLOT_HEIGHT
     )
   }
 
   return(plot_res)
-
 }

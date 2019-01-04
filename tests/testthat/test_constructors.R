@@ -19,7 +19,7 @@ test_that("ratio object is constructable", {
     numerator_density,
     denominator_density,
     ratio_method = "clsif",
-    lambda = 0.1
+    ratio_lambda = 0.1
   )  
 
   expect_s3_class(ratio_obj, "ratio_sugi")
@@ -34,7 +34,7 @@ test_that("generator function produces output", {
     numerator_density,
     denominator_density,
     ratio_method = "clsif",
-    lambda = 0.1,
+    ratio_lambda = 0.1,
     keep_samples = TRUE
   )
 
@@ -53,7 +53,7 @@ test_that("generator function produces numeric output", {
     numerator_density,
     denominator_density,
     ratio_method = "clsif",
-    lambda = 0.1,
+    ratio_lambda = 0.1,
     keep_samples = TRUE
   )
 
@@ -72,7 +72,7 @@ test_that("NULL'ing samples deletes list element",{
     numerator_density,
     denominator_density,
     ratio_method = "clsif",
-    lambda = 0.1,
+    ratio_lambda = 0.1,
     keep_samples = FALSE
   )
 

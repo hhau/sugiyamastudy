@@ -8,7 +8,7 @@ test_that("plot function can produce a plot", {
     numerator_density,
     denominator_density,
     ratio_method = "clsif",
-    lambda = 0.1
+    ratio_lambda = 0.1
   )  
 
   res <- plot_ratio(ratio_obj)
@@ -24,7 +24,7 @@ test_that("plot function can write a pdf", {
     numerator_density,
     denominator_density,
     ratio_method = "clsif",
-    lambda = 0.1
+    ratio_lambda = 0.1
   )  
 
   plot_directory <- tempdir()

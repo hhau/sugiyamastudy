@@ -8,10 +8,10 @@ get_plot_limits <- function(numerator_samples, denominator_samples) {
   de_max <- max(denominator_samples) + SD_FACTOR * sd(denominator_samples)
   plot_max <- max(nu_max, de_max)  
   
-  list(
+  return(list(
     min = plot_min,
     max = plot_max
-  )
+  ))
 }
 
 make_par_string <- function(par_list) {
@@ -27,7 +27,7 @@ make_par_string <- function(par_list) {
   }
   
   par_string <- paste(par_string, collapse = "-")
-  par_string
+  return(par_string)
 }
 
 make_file_name <- function(ratio_obj) {
@@ -43,4 +43,5 @@ make_file_name <- function(ratio_obj) {
     ratio_obj$ratio_method,
     ratio_obj$basis_estimate$lambda,
   sep = "-")
+  return(file_name_string)
 }

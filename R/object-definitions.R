@@ -32,6 +32,7 @@ make_density_obj <- function(
   generator_function <- function(n_samples) {
     args <- params
     args[["n"]] <- n_samples
+    
     do.call(
       paste0("r", base_density),
       args = args
@@ -86,6 +87,7 @@ make_ratio_obj <- function(
   numerator_density,
   denominator_density,
   ratio_method,
+  ratio_lambda,
   keep_samples = TRUE,
   ...
 ) {
@@ -111,6 +113,7 @@ make_ratio_obj <- function(
   args <- list(...)
   args[["x.de"]] <- denominator_density$samples 
   args[["x.nu"]] <- numerator_density$samples
+  args[["lambda"]] <- ratio_lambda
 
   ratio_est <- do.call(
     ratio_method,

@@ -25,9 +25,10 @@ save_ratio <- function(ratio_obj, rds_directory) {
   )
 
   # write the rds file
+  # implicitly return whatever saveRDS returns? do i need a return statement for
+  # consistency?
   saveRDS(
     ratio_obj,
     file = output_path
   )
-
 }

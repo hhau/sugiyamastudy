@@ -31,7 +31,7 @@
 #'
 #' @return I have no idea what to return here 
 #' @export
-suigyama_dr <- function(
+sugiyama_dr <- function(
   numerator = list(base_dist = "norm", params = list(mean = 1, sd = 0.2)),
   denominator = list(base_dist = "t", params = list(df = 3, ncp = 0)),
   numerator_sample_size = 500,
@@ -79,5 +79,4 @@ suigyama_dr <- function(
   )
 
   invisible(make_file_name(ratio_obj))
-
 }

@@ -4,7 +4,8 @@
 \alias{plot_ratio}
 \title{Plot the estimated density ratio}
 \usage{
-plot_ratio(ratio_obj, output_directory = NULL, ...)
+plot_ratio(ratio_obj, output_directory = NULL,
+  plot_height = PLOT_HEIGHT, plot_width = PLOT_WIDTH)
 }
 \arguments{
 \item{ratio_obj}{a ratio object produced by \code{\link{make_ratio_obj}}.}

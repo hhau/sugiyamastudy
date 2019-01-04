@@ -5,7 +5,7 @@
 \title{make "ratio" object}
 \usage{
 make_ratio_obj(numerator_density, denominator_density, ratio_method,
-  keep_samples = TRUE, ...)
+  ratio_lambda, keep_samples = TRUE, ...)
 }
 \arguments{
 \item{numerator_density}{a "density_sugi" object representing the density of 

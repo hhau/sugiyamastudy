@@ -11,7 +11,7 @@ License: What license it uses
 Encoding: UTF-8
 LazyData: true
 Imports: 
-    densityratiosugiyama,
+    densityratiosugiyama (>= 0.0.0.9000),
     pryr,
     ggplot2,
     dplyr,
@@ -19,3 +19,5 @@ Imports:
 Suggests: 
     testthat
 RoxygenNote: 6.1.0
+Remotes:  
+    hhau/densityratiosugiyama

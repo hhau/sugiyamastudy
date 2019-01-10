@@ -1,13 +1,13 @@
 Package: sugiyamastudy
-Title: What the Package Does (One Line, Title Case)
+Title: Wrap densityratiosugiyama for simulation study purposes
 Version: 0.0.0.9000
 Authors@R: 
-    person(given = "First",
-           family = "Last",
+    person(given = "Andrew",
+           family = "Manderson",
            role = c("aut", "cre"),
-           email = "first.last@example.com")
-Description: What the package does (one paragraph).
-License: What license it uses
+           email = "A.User@whereever.net")
+Description: Some Lorem ipsum text.
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Imports: 

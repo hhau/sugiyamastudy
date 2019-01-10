@@ -18,6 +18,8 @@ of the denominator.}
 no positivity constraint), or "ulsif" for ULSIF fitting (L2 penalty, 
 with positivity constraint).}
 
+\item{ratio_lambda}{positive numeric: value of regularisation parameter.}
+
 \item{keep_samples}{boolean: keep the samples used for estimating the density
 ratio or not.}
 

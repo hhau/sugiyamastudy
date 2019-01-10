@@ -62,6 +62,7 @@ make_density_obj <- function(
 #' @param ratio_method string: either "clisf" for CLISF fitting (L1 penalty, 
 #' no positivity constraint), or "ulsif" for ULSIF fitting (L2 penalty, 
 #' with positivity constraint).
+#' @param ratio_lambda positive numeric: value of regularisation parameter.
 #' @param keep_samples boolean: keep the samples used for estimating the density
 #' ratio or not.
 #' @param ... named list of other options passed to either 

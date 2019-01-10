@@ -13,6 +13,10 @@ plot_ratio(ratio_obj, output_directory = NULL,
 \item{output_directory}{defaults to NULL, if not null, should be a file.path
 that points to a directory where the pdf of the plot will be saved.}
 
+\item{plot_height}{output pdf plot height in inches(?)}
+
+\item{plot_width}{output pdf plot width in inches(?)}
+
 \item{...}{other arguments to be passed to \code{\link[ggplot2]{ggsave}}.}
 }
 \value{

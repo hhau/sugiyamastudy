@@ -37,7 +37,7 @@ objectives.}
 
 \item{rds_directory}{directory to save the ratio object to as an RDS file.}
 
-\item{pdf_diectory}{directory to save the ratio plot to.}
+\item{pdf_directory}{directory to save the ratio plot to.}
 }
 \value{
 I have no idea what to return here

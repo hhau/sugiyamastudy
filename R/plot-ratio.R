@@ -8,6 +8,8 @@
 #' @param ratio_obj a ratio object produced by \code{\link{make_ratio_obj}}.
 #' @param output_directory defaults to NULL, if not null, should be a file.path
 #' that points to a directory where the pdf of the plot will be saved.
+#' @param plot_height output pdf plot height in inches(?)   
+#' @param plot_width output pdf plot width in inches(?)
 #' @param ... other arguments to be passed to \code{\link[ggplot2]{ggsave}}.
 #'
 #' @export

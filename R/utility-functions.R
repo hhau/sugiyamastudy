@@ -1,11 +1,11 @@
 # SD_FACTOR is a global defined in sugiyama-study.R
 get_plot_limits <- function(numerator_samples, denominator_samples) {
-  nu_min <- min(numerator_samples) - SD_FACTOR * sd(numerator_samples)
-  de_min <- min(denominator_samples) - SD_FACTOR * sd(denominator_samples)
+  nu_min <- min(numerator_samples) - SD_FACTOR * stats::sd(numerator_samples)
+  de_min <- min(denominator_samples) - SD_FACTOR * stats::sd(denominator_samples)
   plot_min <- min(nu_min, de_min)
 
-  nu_max <- max(numerator_samples) + SD_FACTOR * sd(numerator_samples)
-  de_max <- max(denominator_samples) + SD_FACTOR * sd(denominator_samples)
+  nu_max <- max(numerator_samples) + SD_FACTOR * stats::sd(numerator_samples)
+  de_max <- max(denominator_samples) + SD_FACTOR * stats::sd(denominator_samples)
   plot_max <- max(nu_max, de_max)  
   
   return(list(

@@ -15,9 +15,10 @@ Imports:
     pryr,
     ggplot2,
     dplyr,
-    gridExtra
+    gridExtra,
+    stats
 Suggests: 
     testthat
 RoxygenNote: 6.1.0
-Remotes:  
+Remotes: 
     hhau/densityratiosugiyama

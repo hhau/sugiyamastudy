@@ -46,7 +46,6 @@ make_density_obj <- function(
     sample_size = sample_size,
     params = params
   )
-
   class(res) <- "density_sugi"
   return(res)
 }

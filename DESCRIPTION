@@ -16,7 +16,8 @@ Imports:
     ggplot2,
     dplyr,
     gridExtra,
-    stats
+    stats,
+    parallel
 Suggests: 
     testthat
 RoxygenNote: 6.1.0

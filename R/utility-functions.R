@@ -77,7 +77,7 @@ factorial_parallel_apply <- function(f, ...) {
   f_name <- deparse(substitute(f))
   full_inputs <- expand.grid(list(...))
   
-  res <- do.call(c, parallel::mclapply(seq_along(full_inputs), function(i){
+  res <- do.call(c, parallel::mclapply(seq_len(nrow(full_inputs)), function(i){
     do.call(f, as.list(full_inputs[i, ]))
   }, mc.cores = parallel::detectCores()))
   
